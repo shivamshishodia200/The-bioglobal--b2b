@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  X, 
-  Sparkles, 
-  Clock, 
-  Package, 
-  CheckCircle, 
-  Layers, 
+import {
+  X,
+  Sparkles,
+  Clock,
+  Package,
+  CheckCircle,
+  Layers,
   Send,
   Tag
 } from 'lucide-react';
@@ -34,7 +34,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
-      <div 
+      <div
         className="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl border border-stone-200 overflow-hidden my-8"
         role="dialog"
         aria-modal="true"
@@ -52,9 +52,9 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left: Product Visual & Badges */}
           <div className="relative bg-stone-100 flex items-center justify-center min-h-[300px] md:min-h-full p-6">
-            <img 
-              src={product.image} 
-              alt={product.name} 
+            <img
+              src={product.image}
+              alt={product.name}
               className="w-full h-full object-contain max-h-[420px] rounded-xl drop-shadow-md"
             />
             <div className="absolute top-6 left-6 flex flex-col gap-2">
@@ -94,8 +94,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
                 </h4>
                 <div className="flex flex-wrap gap-1.5">
                   {(product.ingredients || product.keyActives || []).map((act, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="px-2.5 py-1 rounded-md bg-[#E4EEE3] text-[#1D3C34] text-xs font-medium border border-[#C5DAC3]"
                     >
                       {act}
@@ -160,14 +160,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
             <div className="pt-6 mt-6 border-t border-stone-200 flex flex-col sm:flex-row gap-3">
               <button
                 onClick={handleInquireThisProduct}
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-[#1D3C34] to-[#142B25] hover:from-[#142B25] hover:to-[#0D1A13] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-[#10382A] to-[#08291E] hover:from-[#08291E] hover:to-[#051A13] text-[#FAF2E1] border border-[#EBC679]/30 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer"
               >
-                <Send className="w-4 h-4 text-[#DFBD89]" />
+                <Send className="w-4 h-4 text-[#EBC679]" />
                 <span>Request Quotation for This Formula</span>
               </button>
               <button
                 onClick={onClose}
-                className="py-3 px-4 rounded-xl border border-stone-300 text-stone-700 hover:bg-stone-50 font-medium text-xs sm:text-sm cursor-pointer"
+                className="py-3 px-4 rounded-xl border border-stone-300 text-[#14251D] hover:bg-stone-50 font-medium text-xs sm:text-sm cursor-pointer"
               >
                 Close
               </button>

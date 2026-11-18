@@ -232,29 +232,31 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
   return (
     <div 
       id="consultation-form-card"
-      className="bg-white rounded-2xl shadow-xl border border-stone-200/90 p-6 sm:p-8 relative text-stone-900"
+      className={`bg-[#FDFBF7] rounded-2xl shadow-xl border border-[#D5C7AF]/80 relative text-stone-900 ${
+        compact ? 'p-4 sm:p-5 lg:p-6' : 'p-6 sm:p-8'
+      }`}
     >
       {/* Target product badge if prefilled from card or modal */}
       {formData.targetProduct && (
-        <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#E4EEE3] text-[#1D3C34] text-xs font-semibold border border-[#C5DAC3]">
-          <Sparkles className="w-3.5 h-3.5 text-[#708E50]" />
+        <div className="mb-3 inline-flex items-center gap-2 px-2.5 py-1 rounded-lg bg-[#E4EEE3] text-[#10382A] text-xs font-semibold border border-[#C5DAC3]">
+          <Sparkles className="w-3.5 h-3.5 text-[#10382A]" />
           <span>Inquiring for: <strong>{formData.targetProduct}</strong></span>
         </div>
       )}
 
       {/* Form Introduction Header (Part 3) */}
       {!response?.success && (
-        <div className="mb-5 space-y-1 border-b border-stone-100 pb-4">
+        <div className={`space-y-0.5 border-b border-[#D5C7AF]/50 ${compact ? 'mb-3 pb-2.5' : 'mb-5 pb-4'}`}>
           <div className="flex items-center justify-between">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 leading-tight">
+            <h3 className={`font-serif font-bold text-stone-900 leading-tight ${compact ? 'text-lg sm:text-xl' : 'text-xl sm:text-2xl'}`}>
               Tell Us About Your Project
             </h3>
-            <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold text-[#708E50] bg-[#E4EEE3] px-2.5 py-0.5 rounded-full">
-              <Lock className="w-3 h-3" />
+            <span className="hidden sm:inline-flex items-center gap-1 text-[10px] font-semibold text-[#10382A] bg-[#E4EEE3] px-2 py-0.5 rounded-full border border-[#C5DAC3]">
+              <Lock className="w-2.5 h-2.5" />
               <span>Confidential Brief</span>
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-stone-600 font-normal">
+          <p className="text-xs text-stone-600 font-normal">
             Share your requirements so our team can understand your project.
           </p>
         </div>
@@ -319,9 +321,9 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
 
       {/* STANDARD FORM (Part 4) */}
       {(!response || !response.success) && (
-        <form onSubmit={handleSubmit} noValidate className="space-y-4">
+        <form onSubmit={handleSubmit} noValidate className={compact ? 'space-y-3' : 'space-y-4'}>
           {/* Row 1: Full Name & Company / Brand Name */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div>
               <label 
                 htmlFor="consultation-fullName"
@@ -339,12 +341,14 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 aria-required="true"
                 aria-invalid={!!errors.fullName}
                 aria-describedby={errors.fullName ? 'fullName-error' : undefined}
-                className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34] ${
+                className={`w-full rounded-lg border text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                } ${
                   errors.fullName ? 'border-rose-400 bg-rose-50/30' : 'border-stone-300 bg-white'
                 }`}
               />
               {errors.fullName && (
-                <p id="fullName-error" className="text-[11px] text-rose-600 mt-1">{errors.fullName}</p>
+                <p id="fullName-error" className="text-[11px] text-rose-600 mt-0.5">{errors.fullName}</p>
               )}
             </div>
 
@@ -365,13 +369,15 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 value={formData.companyName}
                 onChange={handleChange}
                 placeholder="Enter your brand or company name"
-                className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+                className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                }`}
               />
             </div>
           </div>
 
           {/* Row 2: Business Email & Phone / WhatsApp Number */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div>
               <label 
                 htmlFor="consultation-email"
@@ -389,12 +395,14 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 aria-required="true"
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
-                className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34] ${
+                className={`w-full rounded-lg border text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                } ${
                   errors.email ? 'border-rose-400 bg-rose-50/30' : 'border-stone-300 bg-white'
                 }`}
               />
               {errors.email && (
-                <p id="email-error" className="text-[11px] text-rose-600 mt-1">{errors.email}</p>
+                <p id="email-error" className="text-[11px] text-rose-600 mt-0.5">{errors.email}</p>
               )}
             </div>
 
@@ -415,18 +423,20 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 aria-required="true"
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? 'phone-error' : undefined}
-                className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34] ${
+                className={`w-full rounded-lg border text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                } ${
                   errors.phone ? 'border-rose-400 bg-rose-50/30' : 'border-stone-300 bg-white'
                 }`}
               />
               {errors.phone && (
-                <p id="phone-error" className="text-[11px] text-rose-600 mt-1">{errors.phone}</p>
+                <p id="phone-error" className="text-[11px] text-rose-600 mt-0.5">{errors.phone}</p>
               )}
             </div>
           </div>
 
           {/* Row 3: Product Category & Manufacturing Requirement */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div>
               <label 
                 htmlFor="consultation-category"
@@ -439,7 +449,9 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 name="productCategory"
                 value={formData.productCategory}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+                className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                }`}
               >
                 <option value="Cosmetic Products">Cosmetic Products</option>
                 <option value="Skin Care">Skin Care</option>
@@ -449,7 +461,7 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 <option value="Baby Care">Baby Care</option>
               </select>
               {errors.productCategory && (
-                <p className="text-[11px] text-rose-600 mt-1">{errors.productCategory}</p>
+                <p className="text-[11px] text-rose-600 mt-0.5">{errors.productCategory}</p>
               )}
             </div>
 
@@ -465,7 +477,9 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 name="manufacturingType"
                 value={formData.manufacturingType}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+                className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                }`}
               >
                 <option value="Private Label Manufacturing">Private Label Manufacturing</option>
                 <option value="Third-Party Contract Manufacturing">Third-Party Contract Manufacturing</option>
@@ -473,13 +487,13 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 <option value="Need Guidance / Not Sure Yet">Need Guidance / Not Sure Yet</option>
               </select>
               {errors.manufacturingType && (
-                <p className="text-[11px] text-rose-600 mt-1">{errors.manufacturingType}</p>
+                <p className="text-[11px] text-rose-600 mt-0.5">{errors.manufacturingType}</p>
               )}
             </div>
           </div>
 
           {/* Row 4: Estimated Order Quantity & Preferred Launch Timeline */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label 
@@ -495,7 +509,9 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 name="estimatedQuantity"
                 value={formData.estimatedQuantity}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+                className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                }`}
               >
                 <option value="1,000–2,999 Units">1,000–2,999 Units</option>
                 <option value="3,000–9,999 Units">3,000–9,999 Units</option>
@@ -520,7 +536,9 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 name="targetLaunchPeriod"
                 value={formData.targetLaunchPeriod}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+                className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                  compact ? 'px-3 py-1.5 text-xs sm:text-sm' : 'px-3.5 py-2.5 text-sm'
+                }`}
               >
                 <option value="As Soon as Practical">As Soon as Practical</option>
                 <option value="Within 1–3 Months">Within 1–3 Months</option>
@@ -540,42 +558,36 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
               >
                 Tell Us About Your Product
               </label>
-              <span className="text-[11px] text-stone-400 flex items-center gap-1">
-                <HelpCircle className="w-3 h-3" />
-                <span>Ingredients, packaging, or target audience</span>
-              </span>
+              <span className="text-[10px] text-stone-400">Optional notes</span>
             </div>
             <textarea
               id="consultation-requirements"
               name="productRequirements"
-              rows={compact ? 3 : 4}
+              rows={compact ? 2 : 4}
               maxLength={2000}
               value={formData.productRequirements}
               onChange={handleChange}
-              placeholder="Describe your product idea, preferred ingredients, packaging requirements, target audience, or other details."
-              className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-sm text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#1D3C34]"
+              placeholder="Describe your product idea, target ingredients, or packaging requirements."
+              className={`w-full rounded-lg border border-stone-300 bg-white text-stone-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-[#10382A] ${
+                compact ? 'px-3 py-1.5 text-xs' : 'px-3.5 py-2.5 text-sm'
+              }`}
             />
-            <div className="flex justify-end mt-0.5">
-              <span className="text-[10px] text-stone-400">
-                {formData.productRequirements?.length || 0} / 2000 characters
-              </span>
-            </div>
           </div>
 
-          {/* Row 6: Contact Consent (Part 4 Field 10) */}
-          <div className="pt-1">
-            <div className="flex items-start gap-2.5">
+          {/* Row 6: Contact Consent */}
+          <div className="pt-0.5">
+            <div className="flex items-start gap-2">
               <input
                 id="consultation-consent"
                 type="checkbox"
                 name="contactConsent"
                 checked={formData.contactConsent}
                 onChange={handleChange}
-                className="mt-0.5 w-4 h-4 rounded-sm border-stone-300 text-[#1D3C34] focus:ring-[#1D3C34] cursor-pointer"
+                className="mt-0.5 w-3.5 h-3.5 rounded-sm border-stone-300 text-[#10382A] focus:ring-[#10382A] cursor-pointer"
               />
               <label 
                 htmlFor="consultation-consent"
-                className="text-xs text-stone-600 leading-snug cursor-pointer select-none"
+                className="text-[11px] sm:text-xs text-stone-600 leading-snug cursor-pointer select-none"
               >
                 I agree to be contacted regarding my manufacturing inquiry and acknowledge the{' '}
                 <button
@@ -587,7 +599,7 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                       setIsPrivacyModalOpen(true);
                     }
                   }}
-                  className="font-semibold text-[#1D3C34] underline hover:text-[#708E50] cursor-pointer"
+                  className="font-semibold text-[#10382A] underline hover:text-[#08291E] cursor-pointer"
                 >
                   Privacy Policy
                 </button>
@@ -595,25 +607,27 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
               </label>
             </div>
             {errors.contactConsent && (
-              <p className="text-[11px] text-rose-600 mt-1">{errors.contactConsent}</p>
+              <p className="text-[11px] text-rose-600 mt-0.5">{errors.contactConsent}</p>
             )}
           </div>
 
           {/* Submission Button */}
-          <div className="pt-2">
+          <div className="pt-1">
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-[#1D3C34] to-[#142B25] hover:from-[#142B25] hover:to-[#0D1A13] text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group cursor-pointer"
+              className={`w-full rounded-xl bg-gradient-to-r from-[#10382A] via-[#10382A] to-[#08291E] hover:from-[#08291E] hover:to-[#051C14] text-white font-semibold shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group cursor-pointer border border-[#EBC679]/30 ${
+                compact ? 'py-2.5 px-4 text-xs sm:text-sm' : 'py-3.5 px-6 text-sm'
+              }`}
             >
               {loading ? (
                 <>
-                  <Loader2 className="w-4 h-4 animate-spin text-[#DFBD89]" />
+                  <Loader2 className="w-4 h-4 animate-spin text-[#EBC679]" />
                   <span>Submitting Your Inquiry...</span>
                 </>
               ) : (
                 <>
-                  <Send className="w-4 h-4 text-[#DFBD89] group-hover:translate-x-0.5 transition-transform" />
+                  <Send className="w-4 h-4 text-[#EBC679] group-hover:translate-x-0.5 transition-transform" />
                   <span>Request Technical Consultation</span>
                 </>
               )}

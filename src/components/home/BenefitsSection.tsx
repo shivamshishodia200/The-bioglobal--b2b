@@ -34,7 +34,7 @@ export const BenefitsSection: React.FC = () => {
 
           {/* Section Description */}
           <p className="text-stone-700 text-xs sm:text-sm sm:leading-relaxed font-normal max-w-5xl lg:max-w-6xl">
-            Choosing the right manufacturing partner transforms cosmetic ideas into commercial reality. Explore our featured brand collaboration with COTX Luxury Skincare — showcasing custom dermatological formulations, specialized active ingredients, bespoke packaging, and cleanroom batch production.
+            Choosing the right manufacturing partner transforms cosmetic ideas into commercial reality. Explore our signature turnkey formulation line — showcasing custom dermatological formulations, specialized active ingredients, bespoke packaging, and cleanroom batch production.
           </p>
         </motion.div>
 

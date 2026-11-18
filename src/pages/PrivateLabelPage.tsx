@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { CATEGORIES } from '../data/categories';
 import { useQuoteModal } from '../context/QuoteModalContext';
-import { PartnershipShowcase } from '../components/home/PartnershipShowcase';
+import { TurnkeyManufacturingRoadmap } from '../components/privatelabel/TurnkeyManufacturingRoadmap';
 
 export const PrivateLabelPage: React.FC = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -86,8 +86,8 @@ export const PrivateLabelPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Live Client Manufacturing Case Study */}
-        <PartnershipShowcase />
+        {/* Turnkey Private Label Launch Roadmap */}
+        <TurnkeyManufacturingRoadmap />
 
         {/* Private Label Categories Showcase */}
         <div className="space-y-8">

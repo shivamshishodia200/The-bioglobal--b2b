@@ -271,16 +271,16 @@ export const HeroSection: React.FC = () => {
   return (
     <section
       ref={heroRef}
-      className="relative bg-[#FAF9F5] pt-8 sm:pt-12 lg:pt-14 pb-10 sm:pb-12 lg:pb-14 border-b border-stone-200/70 overflow-hidden select-none"
+      className="relative bg-[#08291E] lg:bg-gradient-to-r lg:from-[#08291E] lg:via-[#08291E] lg:to-[#10382A] pt-8 sm:pt-12 lg:pt-14 pb-10 sm:pb-12 lg:pb-14 border-b border-[#EBC679]/20 overflow-hidden select-none"
     >
-      {/* Decorative Ambient Background Soft Glows */}
+      {/* Decorative Ambient Soft Olive Glow - Anchored on Product/Image Side (Right) */}
       <div
         ref={bgGlow1Ref}
-        className="absolute top-1/4 left-1/4 w-[450px] h-[450px] bg-[#86A55B]/15 rounded-full blur-3xl pointer-events-none -z-0 will-change-transform"
+        className="absolute top-1/2 right-4 lg:right-24 -translate-y-1/2 w-[520px] lg:w-[600px] h-[520px] lg:h-[600px] bg-[#657C44]/30 rounded-full blur-[110px] pointer-events-none -z-0 will-change-transform"
       />
       <div
         ref={bgGlow2Ref}
-        className="absolute bottom-10 right-1/4 w-[380px] h-[380px] bg-[#DFBD89]/20 rounded-full blur-3xl pointer-events-none -z-0 will-change-transform"
+        className="absolute bottom-6 right-16 w-[360px] h-[360px] bg-[#EBC679]/15 rounded-full blur-[90px] pointer-events-none -z-0 will-change-transform"
       />
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
@@ -291,18 +291,18 @@ export const HeroSection: React.FC = () => {
               {/* Category Eyebrow Pill Badge */}
               <div
                 ref={badgeRef}
-                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E4EEE3] text-[#1D3C34] text-xs font-semibold tracking-wide border border-[#C5DAC3] shadow-2xs"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10382A]/90 text-[#EBC679] text-xs font-semibold tracking-wide border border-[#EBC679]/40 shadow-sm"
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#708E50]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#EBC679]" />
                 <span>20+ Years of Cosmetic Manufacturing Expertise</span>
               </div>
 
               {/* Primary Main Heading with GSAP Staggered Line Reveal */}
-              <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] text-stone-900 leading-[1.14] tracking-tight">
+              <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] leading-[1.14] tracking-tight">
                 <span className="block overflow-hidden py-0.5">
                   <span
                     ref={headingLine1Ref}
-                    className="block transform-gpu will-change-transform"
+                    className="block text-[#FAF2E1] transform-gpu will-change-transform"
                   >
                     Your Beauty Brand Starts With
                   </span>
@@ -310,7 +310,7 @@ export const HeroSection: React.FC = () => {
                 <span className="block overflow-hidden py-0.5">
                   <span
                     ref={headingLine2Ref}
-                    className="block text-[#1D3C34] font-normal transform-gpu will-change-transform"
+                    className="block text-[#EBC679] font-normal transform-gpu will-change-transform"
                   >
                     Better Manufacturing.
                   </span>
@@ -320,7 +320,7 @@ export const HeroSection: React.FC = () => {
               {/* Description */}
               <p
                 ref={descRef}
-                className="text-stone-600 text-sm sm:text-base leading-relaxed font-normal max-w-xl"
+                className="text-[#FAF2E1]/85 text-sm sm:text-base leading-relaxed font-normal max-w-xl"
               >
                 Bring your beauty vision to market with a manufacturing partner
                 that understands formulation, quality, packaging, and commercial
@@ -337,19 +337,19 @@ export const HeroSection: React.FC = () => {
                 ref={ctaContainerRef}
                 className="pt-2 flex flex-wrap items-center gap-3.5"
               >
-                {/* Primary Button: Explore Our Products */}
+                {/* Primary Button: Explore Our Products (Champagne Gold Gradient) */}
                 <Link
                   to="/products"
-                  className="px-7 py-3.5 rounded-xl bg-[#1D3C34] hover:bg-[#142B25] text-white font-semibold text-xs sm:text-sm transition-all shadow-md hover:shadow-xl relative overflow-hidden group inline-flex items-center gap-2 cursor-pointer"
+                  className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#FFE3A0] to-[#D5A343] hover:from-[#FFF0C2] hover:to-[#E5B555] text-[#14251D] font-bold text-xs sm:text-sm transition-all shadow-lg shadow-[#08291E]/50 border border-[#FFE3A0] relative overflow-hidden group inline-flex items-center gap-2 cursor-pointer"
                 >
                   <span className="relative z-10 flex items-center gap-2">
                     <span>Explore Our Products</span>
-                    <ArrowRight className="w-4 h-4 text-[#86A55B] group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-[#14251D] group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700 pointer-events-none" />
+                  <span className="absolute inset-0 bg-white/25 -translate-x-full group-hover:translate-x-full transition-transform duration-700 pointer-events-none" />
                 </Link>
 
-                {/* Secondary Button: Request a Sample */}
+                {/* Secondary Button: Request a Sample (Transparent with Warm Ivory Border) */}
                 <button
                   type="button"
                   onClick={() =>
@@ -358,16 +358,16 @@ export const HeroSection: React.FC = () => {
                       serviceType: 'Private Label Manufacturing',
                     })
                   }
-                  className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 text-stone-800 font-semibold text-xs sm:text-sm transition-colors border border-stone-200/90 shadow-2xs inline-flex items-center gap-2 cursor-pointer group"
+                  className="px-6 py-3.5 rounded-xl bg-transparent hover:bg-[#FAF2E1]/10 text-[#FAF2E1] font-semibold text-xs sm:text-sm transition-colors border border-[#FAF2E1] shadow-2xs inline-flex items-center gap-2 cursor-pointer group"
                 >
                   <span>Request a Sample</span>
-                  <ArrowUpRight className="w-4 h-4 text-[#708E50] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-[#EBC679] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>
               </div>
             </div>
 
             {/* 4 Characteristic Bullet Points (Structured in a 2x2 Grid) */}
-            <div className="pt-4 border-t border-stone-200/80">
+            <div className="pt-4 border-t border-[#EBC679]/20">
               <div
                 ref={bulletsContainerRef}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-2.5"
@@ -375,9 +375,9 @@ export const HeroSection: React.FC = () => {
                 {bulletPoints.map((text, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/80 border border-stone-200/80 text-xs sm:text-[13px] font-medium text-stone-700 transition-colors shadow-2xs hover:border-[#86A55B]/60 hover:bg-white"
+                    className="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#08291E]/80 backdrop-blur-md border border-[#EBC679]/25 text-xs sm:text-[13px] font-medium text-[#FAF2E1] transition-all shadow-sm hover:border-[#EBC679]/60 hover:bg-[#10382A]/90"
                   >
-                    <CheckCircle2 className="w-4 h-4 text-[#708E50] flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#EBC679] flex-shrink-0" />
                     <span className="leading-snug">{text}</span>
                   </div>
                 ))}
@@ -392,8 +392,8 @@ export const HeroSection: React.FC = () => {
               className="w-full max-w-[580px] relative perspective-[1000px] will-change-transform"
             >
               {/* Luxury Ambient Lighting Glow Halos behind the bottles */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] bg-gradient-to-tr from-[#708E50]/20 via-[#DFBD89]/20 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
-              <div className="absolute top-10 right-4 w-60 h-60 bg-[#86A55B]/15 rounded-full blur-2xl pointer-events-none -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] bg-gradient-to-tr from-[#657C44]/35 via-[#EBC679]/25 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+              <div className="absolute top-10 right-4 w-60 h-60 bg-[#657C44]/25 rounded-full blur-2xl pointer-events-none -z-10" />
 
               {/* Inner 3D Container with Mouse Tilt & Sine Wave Float */}
               <div
@@ -406,24 +406,24 @@ export const HeroSection: React.FC = () => {
                   <img
                     src={heroPackagingImg}
                     alt="The BioGlobal Clinical Grade Private Label Cosmetic Packaging Collection - Luxury White Bottles & Golden Dispensers"
-                    className="w-full h-auto max-h-[460px] object-contain drop-shadow-[0_20px_35px_rgba(29,60,52,0.18)] transition-transform duration-500 group-hover:scale-[1.02] rounded-2xl"
+                    className="w-full h-auto max-h-[460px] object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.45)] transition-transform duration-500 group-hover:scale-[1.02] rounded-2xl"
                     loading="eager"
                     decoding="async"
                   />
                 </div>
 
-                {/* Integrated Facility Credentials Card */}
+                {/* Integrated Facility Credentials Card - Dark Forest Green with Gold Border */}
                 <div
                   ref={credentialsRef}
-                  className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-stone-200/90 relative z-20 space-y-3"
+                  className="bg-[#08291E]/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-[#EBC679]/35 relative z-20 space-y-3"
                 >
                   {/* Card Header: Low MOQ pill on left + Request a Sample Button on right */}
                   <div className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-700" />
+                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#10382A] border border-[#EBC679]/30 text-[#FAF2E1] text-xs font-semibold">
+                      <CheckCircle2 className="w-4 h-4 text-[#EBC679]" />
                       <span>
                         Starting MOQ:{' '}
-                        <strong className="text-emerald-950 font-bold">
+                        <strong className="text-[#EBC679] font-bold">
                           1,000 Units
                         </strong>
                       </span>
@@ -437,24 +437,24 @@ export const HeroSection: React.FC = () => {
                           serviceType: 'Private Label Manufacturing',
                         })
                       }
-                      className="px-4 py-2 rounded-xl bg-[#708E50] hover:bg-[#5E7D40] text-white text-xs font-semibold flex items-center gap-1.5 cursor-pointer shadow-md transition-all group/btn"
+                      className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#FFE3A0] to-[#D5A343] hover:from-[#FFF0C2] hover:to-[#E5B555] text-[#14251D] text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-md transition-all group/btn"
                     >
                       <span>Request a Sample</span>
-                      <ArrowUpRight className="w-4 h-4 text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-4 h-4 text-[#14251D] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </button>
                   </div>
 
                   {/* 4 Stat Cards */}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center pt-2 border-t border-stone-100">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center pt-2 border-t border-[#EBC679]/20">
                     {statCards.map((stat, idx) => (
                       <div
                         key={idx}
-                        className="p-2 sm:p-2.5 rounded-xl bg-[#FAF9F5] border border-stone-200/80 flex flex-col justify-center min-h-[58px]"
+                        className="p-2 sm:p-2.5 rounded-xl bg-[#10382A]/85 border border-[#EBC679]/25 flex flex-col justify-center min-h-[58px]"
                       >
-                        <p className="text-[9px] sm:text-[10px] text-stone-500 uppercase font-semibold tracking-wider leading-tight">
+                        <p className="text-[9px] sm:text-[10px] text-[#FAF2E1]/75 uppercase font-semibold tracking-wider leading-tight">
                           {stat.label}
                         </p>
-                        <p className="text-xs sm:text-sm font-bold text-[#1D3C34] mt-1">
+                        <p className="text-xs sm:text-sm font-bold text-[#EBC679] mt-1 font-serif">
                           {stat.value}
                         </p>
                       </div>

@@ -7,6 +7,7 @@ import { ServicesSection } from '../components/home/ServicesSection';
 import { CategoryBannerSection } from '../components/home/CategoryBannerSection';
 import { UniqueFeaturesSection } from '../components/home/UniqueFeaturesSection';
 import { ManufacturingProcess } from '../components/home/ManufacturingProcess';
+import { FacilityVideoCarousel } from '../components/home/FacilityVideoCarousel';
 import { BatchEstimatorSection } from '../components/home/BatchEstimatorSection';
 import { CategoriesShowcase } from '../components/home/CategoriesShowcase';
 import { FeaturedProductsSection } from '../components/home/FeaturedProductsSection';
@@ -24,6 +25,9 @@ export const HomePage: React.FC = () => {
 
       {/* 5. Personalized Solutions Just for You (Asymmetric Bento Grid Cards) */}
       <ServicesSection />
+
+      {/* 6. "Inside Our Manufacturing Facility" Approved Video Carousel Showcase */}
+      <FacilityVideoCarousel />
 
       {/* 7. Transform Your Business with Innovative Solutions (Staggered Photo Cards) */}
       <CategoryBannerSection />

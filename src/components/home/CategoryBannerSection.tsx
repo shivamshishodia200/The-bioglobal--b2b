@@ -173,11 +173,11 @@ export const CategoryBannerSection: React.FC = () => {
   return (
     <section
       aria-labelledby="manufacturing-solutions-heading"
-      className="bg-[#E4EEE3]/80 py-12 sm:py-14 lg:py-16 overflow-hidden border-b border-[#C5DAC3]/70 relative"
+      className="bg-[#F6EDDA] py-12 sm:py-14 lg:py-16 overflow-hidden border-b border-[#D5C7AF]/70 relative"
     >
       {/* Background Soft Pattern Elements */}
-      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#86A55B]/15 rounded-full blur-3xl pointer-events-none -z-0" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/40 rounded-full blur-3xl pointer-events-none -z-0" />
+      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#899C7D]/20 rounded-full blur-3xl pointer-events-none -z-0" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/50 rounded-full blur-3xl pointer-events-none -z-0" />
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -193,21 +193,21 @@ export const CategoryBannerSection: React.FC = () => {
             className="lg:col-span-6 space-y-5 text-left"
           >
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/85 text-[#1D3C34] text-xs font-semibold tracking-wider uppercase border border-[#C5DAC3] shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#708E50]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#10382A] text-[#FAF2E1] text-xs font-semibold tracking-wider uppercase border border-[#EBC679]/40 shadow-2xs">
+              <Sparkles className="w-3.5 h-3.5 text-[#EBC679]" />
               <span>MANUFACTURING EXPERTISE</span>
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading in Dark Forest */}
             <h2
               id="manufacturing-solutions-heading"
-              className="font-serif font-light text-3xl sm:text-4xl lg:text-[44px] text-stone-900 tracking-tight leading-[1.18]"
+              className="font-serif font-light text-3xl sm:text-4xl lg:text-[44px] text-[#08291E] tracking-tight leading-[1.18]"
             >
               Transform Your Vision into Exceptional Beauty Products
             </h2>
 
             {/* Description */}
-            <p className="text-stone-700 text-xs sm:text-sm sm:leading-relaxed font-normal">
+            <p className="text-[#14251D]/85 text-xs sm:text-sm sm:leading-relaxed font-normal">
               At The BioGlobal, we provide contract manufacturing, private label
               customization, manufacturing support, and packaging coordination
               to help emerging and established brands build distinctive beauty
@@ -231,21 +231,21 @@ export const CategoryBannerSection: React.FC = () => {
                 return (
                   <div
                     key={hl.id}
-                    className="p-3 sm:p-3.5 rounded-2xl bg-white/90 border border-stone-200/80 shadow-2xs flex items-start gap-3 sm:gap-3.5"
+                    className="p-3 sm:p-3.5 rounded-2xl bg-white/90 border border-[#D5C7AF] shadow-2xs flex items-start gap-3 sm:gap-3.5"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-[#E4EEE3] text-[#1D3C34] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#C5DAC3]">
-                      <IconComponent className="w-4 h-4" />
+                    <div className="w-9 h-9 rounded-xl bg-[#FAF2E1] text-[#10382A] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#EBC679]/40">
+                      <IconComponent className="w-4 h-4 text-[#10382A]" />
                     </div>
                     <div className="space-y-0.5">
                       <div className="flex flex-wrap items-baseline gap-2">
-                        <span className="text-xs sm:text-sm font-bold text-stone-900 tracking-tight">
+                        <span className="text-xs sm:text-sm font-bold text-[#14251D] tracking-tight">
                           {hl.displayText}
                         </span>
-                        <span className="text-[11px] font-medium text-[#708E50]">
+                        <span className="text-[11px] font-semibold text-[#10382A]">
                           ({hl.title})
                         </span>
                       </div>
-                      <p className="text-xs text-stone-600 leading-relaxed font-normal">
+                      <p className="text-xs text-[#14251D]/75 leading-relaxed font-normal">
                         {hl.text}
                       </p>
                     </div>
@@ -258,17 +258,17 @@ export const CategoryBannerSection: React.FC = () => {
             <div className="pt-2 flex flex-wrap items-center gap-3.5">
               <Link
                 to="/products"
-                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3.5 rounded-xl bg-[#1D3C34] hover:bg-[#142B25] text-white font-semibold text-xs sm:text-sm transition-all shadow-md hover:shadow-xl group"
+                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3.5 rounded-xl bg-[#10382A] hover:bg-[#08291E] text-[#FAF2E1] border border-[#EBC679]/30 font-semibold text-xs sm:text-sm transition-all shadow-md hover:shadow-xl group cursor-pointer"
               >
                 <span>Explore All Categories</span>
-                <ArrowRight className="w-4 h-4 text-[#86A55B] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-[#EBC679] group-hover:translate-x-1 transition-transform" />
               </Link>
 
               <Link
                 to="/consultation?source=homepage-category-banner"
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 text-stone-800 font-semibold text-xs sm:text-sm transition-colors border border-stone-200/90 shadow-2xs group cursor-pointer"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3.5 rounded-xl bg-white/90 hover:bg-white text-[#14251D] font-semibold text-xs sm:text-sm transition-colors border border-[#D5C7AF] shadow-2xs group cursor-pointer"
               >
-                <FlaskConical className="w-4 h-4 text-[#708E50]" />
+                <FlaskConical className="w-4 h-4 text-[#10382A]" />
                 <span>Request Custom Formulation</span>
               </Link>
             </div>
@@ -279,8 +279,8 @@ export const CategoryBannerSection: React.FC = () => {
           {/* ======================================================== */}
           <div className="lg:col-span-6 relative h-[480px] sm:h-[520px] lg:h-[540px] overflow-hidden rounded-3xl">
             {/* Top and Bottom Smooth Fade Gradients */}
-            <div className="absolute top-0 left-0 right-0 h-16 sm:h-20 bg-gradient-to-b from-[#E4EEE3] via-[#E4EEE3]/90 to-transparent z-20 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-20 bg-gradient-to-t from-[#E4EEE3] via-[#E4EEE3]/90 to-transparent z-20 pointer-events-none" />
+            <div className="absolute top-0 left-0 right-0 h-16 sm:h-20 bg-gradient-to-b from-[#F6EDDA] via-[#F6EDDA]/90 to-transparent z-20 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-20 bg-gradient-to-t from-[#F6EDDA] via-[#F6EDDA]/90 to-transparent z-20 pointer-events-none" />
 
             <div className="grid grid-cols-2 gap-4 sm:gap-5 h-full marquee-container">
               

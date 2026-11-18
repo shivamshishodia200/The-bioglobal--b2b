@@ -38,30 +38,29 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
           onViewDetails(product);
         }
       }}
-      className="group bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer hover:-translate-y-1.5 select-none focus:outline-hidden focus:ring-2 focus:ring-[#708E50]"
+      className="group bg-white rounded-2xl overflow-hidden border border-stone-200/90 hover:border-[#EBC679] shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer hover:-translate-y-1.5 select-none focus:outline-hidden focus:ring-2 focus:ring-[#10382A]"
     >
       <div>
-        {/* Product Visual Container with Hover Zoom & Gradient Vignette */}
-        <div className="relative aspect-4/3 w-full bg-stone-100 overflow-hidden">
+        {/* Product Visual Container with Aspect-Square and Padding for Perfect Fit */}
+        <div className="relative aspect-square w-full bg-[#FAF9F5] p-5 flex items-center justify-center overflow-hidden">
           <img
             src={imgError ? '/images/bioglobal/categories/skincare.webp' : product.image}
             alt={`${product.name} — ${product.category} packaging`}
             onError={() => setImgError(true)}
-            className="product-card-image transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
 
           {/* Top Left Category Badge */}
-          <div className="absolute top-2.5 left-2.5">
-            <span className="px-2.5 py-1 rounded-full bg-[#1D3C34]/90 backdrop-blur-md text-white text-[10px] font-bold tracking-wider uppercase shadow-xs border border-white/20">
+          <div className="absolute top-2.5 left-2.5 z-10 pointer-events-none">
+            <span className="px-2.5 py-1 rounded-full bg-[#10382A]/90 backdrop-blur-md text-[#FAF2E1] text-[10px] font-bold tracking-wider uppercase shadow-xs border border-[#EBC679]/40">
               {product.category}
             </span>
           </div>
 
           {/* Bottom Right MOQ Badge */}
-          <div className="absolute bottom-2.5 right-2.5">
-            <span className="px-2.5 py-0.5 rounded-full bg-white/95 backdrop-blur-xs text-stone-800 text-[10px] font-bold border border-stone-200 shadow-2xs">
+          <div className="absolute bottom-2.5 right-2.5 z-10 pointer-events-none">
+            <span className="px-2.5 py-0.5 rounded-full bg-[#F6EDDA]/95 backdrop-blur-xs text-[#14251D] text-[10px] font-bold border border-[#D5C7AF] shadow-2xs">
               MOQ: {product.minOrderQuantity || '1,000 units'}
             </span>
           </div>
@@ -69,13 +68,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
 
         {/* Product Content */}
         <div className="p-4 sm:p-5 space-y-2.5">
-          <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#708E50] uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-[#708E50] shrink-0" />
+          <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#10382A] uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 text-[#10382A] shrink-0" />
             <span className="truncate">{product.tagline || 'Approved Formulation Benchmark'}</span>
           </div>
 
           {/* Product Title (H3 with line clamp) */}
-          <h3 className="font-serif text-base font-bold text-stone-900 group-hover:text-[#708E50] transition-colors line-clamp-2 min-h-[44px] leading-snug">
+          <h3 className="font-serif text-base font-bold text-[#14251D] group-hover:text-[#10382A] transition-colors line-clamp-2 min-h-[44px] leading-snug">
             {product.name}
           </h3>
 
@@ -89,7 +88,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
             {activeIngredients.slice(0, 3).map((act, i) => (
               <span
                 key={i}
-                className="text-[10px] px-2 py-0.5 rounded-md bg-[#E4EEE3] text-[#1D3C34] font-semibold border border-[#C5DAC3] truncate max-w-[130px]"
+                className="text-[10px] px-2 py-0.5 rounded-md bg-[#F6EDDA] text-[#10382A] font-semibold border border-[#D5C7AF] truncate max-w-[130px]"
               >
                 {act}
               </span>
@@ -105,12 +104,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
           <div className="pt-2 border-t border-stone-100/80 flex items-center justify-between text-[11px]">
             {primaryPackaging ? (
               <div className="flex items-center gap-1 text-stone-500 truncate max-w-[58%]">
-                <Package className="w-3 h-3 text-[#708E50] shrink-0" />
+                <Package className="w-3 h-3 text-[#10382A] shrink-0" />
                 <span className="truncate">{primaryPackaging}</span>
               </div>
             ) : <div />}
-            <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#1D3C34] bg-[#FAF9F5] px-2 py-0.5 rounded border border-stone-200">
-              <Tag className="w-2.5 h-2.5 text-[#DFBD89]" />
+            <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#10382A] bg-[#F6EDDA] px-2 py-0.5 rounded border border-[#D5C7AF]">
+              <Tag className="w-2.5 h-2.5 text-[#EBC679]" />
               <span>Request Pricing</span>
             </span>
           </div>
@@ -125,7 +124,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
             e.stopPropagation();
             onViewDetails(product);
           }}
-          className="w-full py-2 px-2.5 rounded-xl border border-stone-300 hover:border-stone-400 bg-white hover:bg-stone-50 text-stone-800 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
+          className="w-full py-2 px-2.5 rounded-xl border border-stone-300 hover:border-[#10382A] bg-white hover:bg-[#F6EDDA] text-[#14251D] text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
         >
           <Eye className="w-3.5 h-3.5 text-stone-500" />
           <span>View Details</span>
@@ -134,10 +133,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails
         <button
           type="button"
           onClick={handleInquiry}
-          className="w-full py-2 px-2.5 rounded-xl bg-[#1D3C34] hover:bg-[#142B25] text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-xs transition-colors cursor-pointer group/btn"
+          className="w-full py-2 px-2.5 rounded-xl bg-[#10382A] hover:bg-[#08291E] text-[#FAF2E1] border border-[#EBC679]/30 text-xs font-semibold flex items-center justify-center gap-1.5 shadow-xs transition-colors cursor-pointer group/btn"
         >
           <span>Request a Quote</span>
-          <ArrowUpRight className="w-3.5 h-3.5 text-[#DFBD89] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+          <ArrowUpRight className="w-3.5 h-3.5 text-[#EBC679] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
         </button>
       </div>
     </article>

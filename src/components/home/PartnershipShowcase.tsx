@@ -34,10 +34,10 @@ export const PartnershipShowcase: React.FC = () => {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E4EEE3] text-[#1D3C34] text-[11px] font-bold tracking-wider uppercase border border-[#C5DAC3]">
                 <Sparkles className="w-3.5 h-3.5 text-[#708E50]" />
-                <span>REAL MANUFACTURING COLLABORATION</span>
+                <span>TURNKEY FORMULATION SPOTLIGHT</span>
               </div>
               <h3 className="font-serif font-semibold text-2xl sm:text-3xl text-stone-900 tracking-tight">
-                Case Study: COTX Luxury Skincare Line
+                Signature Turnkey Formulations Showcase
               </h3>
               <p className="text-stone-600 text-xs sm:text-sm max-w-2xl font-normal leading-relaxed">
                 {COTX_PARTNERSHIP.description}
@@ -117,7 +117,7 @@ export const PartnershipShowcase: React.FC = () => {
 
                 {/* Subtext info */}
                 <span className="text-[11px] text-stone-600 mt-2 text-center">
-                  Packshot &amp; formulation manufactured under contract for COTX Luxury Skincare
+                  Turnkey packshot &amp; dermatological formulation developed by The BioGlobal
                 </span>
               </div>
 

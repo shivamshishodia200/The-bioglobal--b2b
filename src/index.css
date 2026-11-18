@@ -1,50 +1,65 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-forest: #1D3C34;
-  --color-brand-forest-dark: #142B25;
-  --color-brand-forest-light: #2A4A41;
+  --color-brand-utility: #08291E;
+  --color-brand-forest: #10382A;
+  --color-brand-forest-dark: #08291E;
+  --color-brand-forest-light: #1D3C34;
+  --color-brand-glow: #657C44;
+  --color-brand-gold: #EBC679;
+  --color-brand-gold-start: #FFE3A0;
+  --color-brand-gold-end: #D5A343;
+  --color-brand-ivory: #F6EDDA;
+  --color-brand-olive: #899C7D;
+  --color-brand-taupe: #D5C7AF;
+  --color-brand-dark: #14251D;
+  --color-brand-light: #FAF2E1;
   --color-brand-leaf: #708E50;
   --color-brand-leaf-hover: #5E7D40;
   --color-brand-leaf-light: #86A55B;
-  --color-brand-leaf-flourish: #7EA058;
   --color-brand-sage: #E4EEE3;
   --color-brand-sage-card: #D3E4D1;
   --color-brand-sage-border: #C5DAC3;
-  --color-brand-ivory: #FAF9F5;
-  --color-brand-gold: #DFBD89;
-  --color-brand-gold-hover: #C8A46E;
 }
 
 @layer base {
   :root {
-    /* Brand Theme Colors Extracted Directly From TheBioGlobal Logo */
-    --color-brand-forest: #1D3C34;     /* Deep Pine/Forest from "The" & "Global" */
-    --color-brand-forest-dark: #142B25;
-    --color-brand-leaf: #708E50;       /* Fresh Olive/Sage from "Bio" & Leaf */
+    /* Client-Approved Theme Semantic Tokens */
+    --color-brand-utility: #08291E;
+    --color-brand-forest: #10382A;
+    --color-brand-glow: #657C44;
+    --color-brand-gold: #EBC679;
+    --color-brand-gold-start: #FFE3A0;
+    --color-brand-gold-end: #D5A343;
+    --color-brand-ivory: #F6EDDA;
+    --color-brand-olive: #899C7D;
+    --color-brand-taupe: #D5C7AF;
+    --color-brand-dark: #14251D;
+    --color-brand-light: #FAF2E1;
+    --color-brand-leaf: #708E50;
     --color-brand-leaf-hover: #5E7D40;
-    --color-brand-leaf-light: #86A55B;
-    --color-brand-sage-bg: #E4EEE3;    /* Harmonious Soft Sage Tint */
-    --color-brand-sage-card: #D3E4D1;
-    --color-brand-ivory: #FAF9F5;
-    --color-brand-gold: #DFBD89;
   }
 
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    color: #1D3C34;
+    color: #14251D;
     background-color: #FAF9F5;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     letter-spacing: -0.02em;
-    color: #1D3C34;
+    color: #14251D;
   }
 
   ::selection {
-    background-color: #708E50;
-    color: #ffffff;
+    background-color: #10382A;
+    color: #FAF2E1;
   }
 }
 
@@ -52,13 +67,16 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 ::-webkit-scrollbar-track {
   background: #E4EEE3;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #708E50;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #5E7D40;
 }
@@ -73,6 +91,7 @@
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-50%);
   }
@@ -82,6 +101,7 @@
   0% {
     transform: translateY(-50%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -107,6 +127,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -122,6 +143,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .animate-marquee-left,
   .animate-marquee-up,
   .animate-marquee-down {
@@ -142,9 +164,9 @@
 
 .product-card-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -164,4 +186,3 @@
   object-fit: contain;
   object-position: center;
 }
-

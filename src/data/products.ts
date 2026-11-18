@@ -1,4 +1,5 @@
 import { Product } from '../types';
+import { PRODUCT_IMAGES } from './productImages';
 
 export const PRODUCTS: Product[] = [
   {
@@ -11,7 +12,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Gentle Cleansing & Moisture Balance",
     "shortDescription": "Explore gentle facial cleansing formulations suited for daily impurities removal across foaming, gel, and milky cream formats.",
     "description": "Explore gentle facial cleansing formulations suited for daily impurities removal across foaming, gel, and milky cream formats.",
-    "image": "/images/bioglobal/products/face-cleanser.webp",
+    "image": PRODUCT_IMAGES['face-cleanser'],
     "keyActives": [
       "Amino Acid Surfactants",
       "Centella Asiatica",
@@ -57,7 +58,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Concentrated Skincare Delivery Bases",
     "shortDescription": "Discover lightweight facial serum concepts formulated with concentrated cosmetic actives, botanical extracts, and dropper packaging.",
     "description": "Discover lightweight facial serum concepts formulated with concentrated cosmetic actives, botanical extracts, and dropper packaging.",
-    "image": "/images/bioglobal/products/facial-serum.webp",
+    "image": PRODUCT_IMAGES['facial-serum'],
     "keyActives": [
       "Niacinamide (5%)",
       "Zinc PCA",
@@ -103,7 +104,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Antioxidant-Focused Daily Skincare Concepts",
     "shortDescription": "Explore stabilized antioxidant vitamin C facial serum concepts designed for radiant skin appearance and targeted daily beauty routines.",
     "description": "Explore stabilized antioxidant vitamin C facial serum concepts designed for radiant skin appearance and targeted daily beauty routines.",
-    "image": "/images/bioglobal/products/facial-serum.webp",
+    "image": PRODUCT_IMAGES['vitamin-c-serum'],
     "keyActives": [
       "Sodium Ascorbyl Phosphate (Stable Vit C)",
       "Ferulic Acid",
@@ -149,7 +150,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Multi-Molecular Hydration Architecture",
     "shortDescription": "Develop multi-weight hyaluronic acid hydration serum concepts engineered to replenish moisture barriers and deliver smooth skin texture.",
     "description": "Develop multi-weight hyaluronic acid hydration serum concepts engineered to replenish moisture barriers and deliver smooth skin texture.",
-    "image": "/images/bioglobal/products/hyaluronic-acid-serum.webp",
+    "image": PRODUCT_IMAGES['hyaluronic-acid-serum'],
     "keyActives": [
       "Multi-Weight Hyaluronic Acid Complex",
       "Pro-Vitamin B5 (Panthenol)",
@@ -195,7 +196,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Rich Barrier & Emollient Hydration",
     "shortDescription": "Explore rich facial moisturizing cream concepts featuring comforting emollient blends, velvety skin feel, and luxury cosmetic jars.",
     "description": "Explore rich facial moisturizing cream concepts featuring comforting emollient blends, velvety skin feel, and luxury cosmetic jars.",
-    "image": "/images/bioglobal/products/moisturizing-cream.webp",
+    "image": PRODUCT_IMAGES['moisturizing-cream'],
     "keyActives": [
       "Ceramides (EOP, NP, AP)",
       "Shea Butter",
@@ -241,7 +242,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Skin Conditioning & Preparation Liquids",
     "shortDescription": "Discover balancing facial toner concepts formulated with soothing botanical hydrosols, clarifying agents, and hydrating essences.",
     "description": "Discover balancing facial toner concepts formulated with soothing botanical hydrosols, clarifying agents, and hydrating essences.",
-    "image": "/images/bioglobal/products/face-toner.webp",
+    "image": PRODUCT_IMAGES['face-toner'],
     "keyActives": [
       "Rose Damascena Hydrosol",
       "Witch Hazel (Alcohol-Free)",
@@ -287,7 +288,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Intensive Treatment & Clarifying Masks",
     "shortDescription": "Explore cosmetic face mask concepts available in nourishing cream, clarifying clay, and rejuvenating gel treatment formats.",
     "description": "Explore cosmetic face mask concepts available in nourishing cream, clarifying clay, and rejuvenating gel treatment formats.",
-    "image": "/images/bioglobal/products/face-mask.webp",
+    "image": PRODUCT_IMAGES['face-mask'],
     "keyActives": [
       "Kaolin Clay",
       "Activated Charcoal",
@@ -333,7 +334,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Delicate Periorbital Care Formulations",
     "shortDescription": "Formulate delicate eye-area cosmetic cream concepts designed for gentle hydration, smooth application, and precision applicator tubes.",
     "description": "Formulate delicate eye-area cosmetic cream concepts designed for gentle hydration, smooth application, and precision applicator tubes.",
-    "image": "/images/bioglobal/products/eye-cream.webp",
+    "image": PRODUCT_IMAGES['eye-cream'],
     "keyActives": [
       "Palmitoyl Tripeptide",
       "Caffeine",
@@ -379,7 +380,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Gentle Cleansing & Scalp Refreshment",
     "shortDescription": "Explore restorative hair cleansing formulations featuring gentle sulfate-free surfactant blends and customizable botanical fragrance profiles.",
     "description": "Explore restorative hair cleansing formulations featuring gentle sulfate-free surfactant blends and customizable botanical fragrance profiles.",
-    "image": "/images/bioglobal/products/shampoo.webp",
+    "image": PRODUCT_IMAGES['shampoo'],
     "keyActives": [
       "Hydrolyzed Wheat Protein",
       "Sodium Cocoyl Isethionate",
@@ -425,7 +426,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Cuticle Smoothing & Detangling Emulsions",
     "shortDescription": "Discover detangling and nourishing conditioner concepts engineered for strand softness, moisture retention, and salon-grade performance.",
     "description": "Discover detangling and nourishing conditioner concepts engineered for strand softness, moisture retention, and salon-grade performance.",
-    "image": "/images/bioglobal/products/hair-conditioner.webp",
+    "image": PRODUCT_IMAGES['hair-conditioner'],
     "keyActives": [
       "Cetearyl Alcohol",
       "Behentrimonium Chloride",
@@ -471,7 +472,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Deep Conditioning & Intensive Nourishment",
     "shortDescription": "Explore intensive conditioning hair mask concepts formulated with rich plant butters, ceramides, and wide-mouth jar packaging.",
     "description": "Explore intensive conditioning hair mask concepts formulated with rich plant butters, ceramides, and wide-mouth jar packaging.",
-    "image": "/images/bioglobal/products/hair-mask.webp",
+    "image": PRODUCT_IMAGES['hair-mask'],
     "keyActives": [
       "Shea Butter",
       "Hydrolyzed Silk Protein",
@@ -517,7 +518,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Anti-Frizz & Glossing Fluid Solutions",
     "shortDescription": "Discuss lightweight hair smoothing serum concepts designed to tame frizz, enhance shine, and protect against environmental dryness.",
     "description": "Discuss lightweight hair smoothing serum concepts designed to tame frizz, enhance shine, and protect against environmental dryness.",
-    "image": "/images/bioglobal/products/hair-serum.webp",
+    "image": PRODUCT_IMAGES['hair-serum'],
     "keyActives": [
       "Cyclomethicone",
       "Dimethiconol",
@@ -563,7 +564,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Botanical Nutrient Elixirs for Strands",
     "shortDescription": "Explore cold-pressed botanical hair oil concepts combining nourishing plant lipids, lightweight sensory feel, and dropper packaging.",
     "description": "Explore cold-pressed botanical hair oil concepts combining nourishing plant lipids, lightweight sensory feel, and dropper packaging.",
-    "image": "/images/bioglobal/products/hair-oil.webp",
+    "image": PRODUCT_IMAGES['hair-oil'],
     "keyActives": [
       "Castor Seed Oil",
       "Rosemary Leaf Extract",
@@ -609,7 +610,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Targeted Scalp Wellness & Root Care",
     "shortDescription": "Discover scalp care formulation concepts targeting root zone hydration, soothing comfort, and targeted applicator bottle dispensing.",
     "description": "Discover scalp care formulation concepts targeting root zone hydration, soothing comfort, and targeted applicator bottle dispensing.",
-    "image": "/images/bioglobal/products/scalp-serum.webp",
+    "image": PRODUCT_IMAGES['scalp-serum'],
     "keyActives": [
       "Peptides (Copper Tripeptide)",
       "Caffeine",
@@ -655,7 +656,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "All-Day Moisture & Detangling Protection",
     "shortDescription": "Explore weightless leave-in conditioning concepts available in moisturizing spray mist, light lotion, and pump bottle presentations.",
     "description": "Explore weightless leave-in conditioning concepts available in moisturizing spray mist, light lotion, and pump bottle presentations.",
-    "image": "/images/bioglobal/products/leave-in-conditioner.webp",
+    "image": PRODUCT_IMAGES['leave-in-conditioner'],
     "keyActives": [
       "Aloe Barbadensis Leaf Juice",
       "Hydrolyzed Rice Protein",
@@ -701,7 +702,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Bond & Split-End Emollient Care",
     "shortDescription": "Formulate restorative hair conditioning cream concepts providing split-end care, cuticle smoothing, and daily thermal styling protection.",
     "description": "Formulate restorative hair conditioning cream concepts providing split-end care, cuticle smoothing, and daily thermal styling protection.",
-    "image": "/images/bioglobal/products/hair-repair-cream.webp",
+    "image": PRODUCT_IMAGES['hair-repair-cream'],
     "keyActives": [
       "Amino Acid Complex",
       "Argan Oil",
@@ -747,7 +748,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Classic Cleansing & Aromatic Soap Formulations",
     "shortDescription": "Explore artisanal bathing soap formulations crafted with vegetable oils, aromatic botanical infusions, and custom molded shapes.",
     "description": "Explore artisanal bathing soap formulations crafted with vegetable oils, aromatic botanical infusions, and custom molded shapes.",
-    "image": "/images/bioglobal/products/bathing-soap.webp",
+    "image": PRODUCT_IMAGES['bathing-soap'],
     "keyActives": [
       "Palm Oil-Free Vegetable Base",
       "Olive Oil",
@@ -793,7 +794,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Translucent Moisture-Rich Cleansing Bars",
     "shortDescription": "Discover translucent botanical glycerin soap concepts offering mild lather, humectant skin comfort, and distinctive aesthetic presentation.",
     "description": "Discover translucent botanical glycerin soap concepts offering mild lather, humectant skin comfort, and distinctive aesthetic presentation.",
-    "image": "/images/bioglobal/products/glycerin-soap.webp",
+    "image": PRODUCT_IMAGES['glycerin-soap'],
     "keyActives": [
       "Pure Vegetable Glycerin (25%+)",
       "Aloe Vera Extract",
@@ -839,7 +840,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Nourishing Cleansing Gel Formulations",
     "shortDescription": "Explore refreshing liquid body cleansing formulations featuring rich lather, invigorating essential oil scents, and ergonomic bottles.",
     "description": "Explore refreshing liquid body cleansing formulations featuring rich lather, invigorating essential oil scents, and ergonomic bottles.",
-    "image": "/images/bioglobal/products/body-wash.webp",
+    "image": PRODUCT_IMAGES['body-wash'],
     "keyActives": [
       "Decyl Glucoside",
       "Cocamidopropyl Betaine",
@@ -885,7 +886,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Energizing Aromatherapeutic Cleansing",
     "shortDescription": "Discuss crystal-clear shower gel concepts with silky foaming textures, long-lasting fragrances, and modern pump dispenser formats.",
     "description": "Discuss crystal-clear shower gel concepts with silky foaming textures, long-lasting fragrances, and modern pump dispenser formats.",
-    "image": "/images/bioglobal/products/shower-gel.webp",
+    "image": PRODUCT_IMAGES['shower-gel'],
     "keyActives": [
       "Eucalyptus Leaf Oil",
       "Peppermint Hydrosol",
@@ -931,7 +932,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Frequent-Use Hand Hygiene & Softening",
     "shortDescription": "Formulate gentle liquid hand cleansing products suited for everyday hygiene in durable pump bottles and refill packaging.",
     "description": "Formulate gentle liquid hand cleansing products suited for everyday hygiene in durable pump bottles and refill packaging.",
-    "image": "/images/bioglobal/products/liquid-hand-wash.webp",
+    "image": PRODUCT_IMAGES['liquid-hand-wash'],
     "keyActives": [
       "Aloe Barbadensis Leaf Extract",
       "Vitamin E",
@@ -977,7 +978,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Skin Polishing & Exfoliating Bath Pastes",
     "shortDescription": "Discover exfoliating bath and body scrub concepts featuring natural sugar, mineral sea salts, and moisturizing carrier oils.",
     "description": "Discover exfoliating bath and body scrub concepts featuring natural sugar, mineral sea salts, and moisturizing carrier oils.",
-    "image": "/images/bioglobal/products/bath-scrub.webp",
+    "image": PRODUCT_IMAGES['bath-scrub'],
     "keyActives": [
       "Cane Sugar Granules",
       "Dead Sea Mineral Salts",
@@ -1023,7 +1024,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Mineral Soaking Crystals & Aromatherapy",
     "shortDescription": "Explore mineral-rich bath salt concepts infused with Epsom salts, therapeutic botanical aromatics, and apothecary jar packaging.",
     "description": "Explore mineral-rich bath salt concepts infused with Epsom salts, therapeutic botanical aromatics, and apothecary jar packaging.",
-    "image": "/images/bioglobal/products/bath-salts.webp",
+    "image": PRODUCT_IMAGES['bath-salts'],
     "keyActives": [
       "Himalayan Pink Rock Salt",
       "Magnesium Sulfate (Epsom Salt)",
@@ -1069,7 +1070,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Syndet & Solid Cleansing Innovations",
     "shortDescription": "Discuss dermatological cleansing bar concepts formulated with mild syndet bases, soothing oat extracts, and plastic-free packaging.",
     "description": "Discuss dermatological cleansing bar concepts formulated with mild syndet bases, soothing oat extracts, and plastic-free packaging.",
-    "image": "/images/bioglobal/products/cleansing-bars.webp",
+    "image": PRODUCT_IMAGES['cleansing-bars'],
     "keyActives": [
       "Sodium Cocoyl Isethionate",
       "Colloidal Oatmeal",
@@ -1115,7 +1116,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Everyday Lightweight Full-Body Hydration",
     "shortDescription": "Explore fast-absorbing body moisturizing lotion concepts designed for daily skin hydration and convenient pump bottle dispensing.",
     "description": "Explore fast-absorbing body moisturizing lotion concepts designed for daily skin hydration and convenient pump bottle dispensing.",
-    "image": "/images/bioglobal/products/body-lotion.webp",
+    "image": PRODUCT_IMAGES['body-lotion'],
     "keyActives": [
       "Sunflower Seed Oil",
       "Glycerin",
@@ -1161,7 +1162,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Ultra-Rich Lipid Conditioning Balm",
     "shortDescription": "Discover ultra-rich whipped body butter concepts formulated with organic shea and cocoa butters in luxury cosmetic jars.",
     "description": "Discover ultra-rich whipped body butter concepts formulated with organic shea and cocoa butters in luxury cosmetic jars.",
-    "image": "/images/bioglobal/products/body-butter.webp",
+    "image": PRODUCT_IMAGES['body-butter'],
     "keyActives": [
       "Shea Butter (20%+)",
       "Cocoa Seed Butter",
@@ -1207,7 +1208,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Cushiony Emollient Barrier Protection",
     "shortDescription": "Explore deeply hydrating body cream formulations engineered for dry skin barrier replenishment and velvety non-greasy absorption.",
     "description": "Explore deeply hydrating body cream formulations engineered for dry skin barrier replenishment and velvety non-greasy absorption.",
-    "image": "/images/bioglobal/products/body-cream.webp",
+    "image": PRODUCT_IMAGES['body-cream'],
     "keyActives": [
       "Ceramide Complex",
       "Sweet Almond Oil",
@@ -1253,7 +1254,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Skin-Smoothing Polishing Treatments",
     "shortDescription": "Discuss invigorating body polishing scrub concepts combining fine botanical exfoliants, nourishing emollients, and recyclable jar packaging.",
     "description": "Discuss invigorating body polishing scrub concepts combining fine botanical exfoliants, nourishing emollients, and recyclable jar packaging.",
-    "image": "/images/bioglobal/products/body-scrub.webp",
+    "image": PRODUCT_IMAGES['body-scrub'],
     "keyActives": [
       "Fine Cane Sugar Crystals",
       "Arabica Coffee Grounds",
@@ -1299,7 +1300,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Pocket Moisture & Cuticle Conditioning",
     "shortDescription": "Explore compact hand moisturizer concepts offering rapid absorption, protective moisture-locking barriers, and travel-friendly tubes.",
     "description": "Explore compact hand moisturizer concepts offering rapid absorption, protective moisture-locking barriers, and travel-friendly tubes.",
-    "image": "/images/bioglobal/products/hand-cream.webp",
+    "image": PRODUCT_IMAGES['hand-cream'],
     "keyActives": [
       "Shea Butter",
       "Glycerin",
@@ -1345,7 +1346,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Intensive Heel Softening & Callus Care",
     "shortDescription": "Discover intensive foot care cream concepts featuring smoothing exfoliating agents, comforting plant butters, and refreshing aromas.",
     "description": "Discover intensive foot care cream concepts featuring smoothing exfoliating agents, comforting plant butters, and refreshing aromas.",
-    "image": "/images/bioglobal/products/foot-cream.webp",
+    "image": PRODUCT_IMAGES['foot-cream'],
     "keyActives": [
       "Urea (10%)",
       "Lactic Acid",
@@ -1391,7 +1392,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Dry Botanical Oil & Radiant Sheen",
     "shortDescription": "Explore luxurious dry body oil concepts providing silky hydration, radiant glow finishes, and precision pump or dropper dispensing.",
     "description": "Explore luxurious dry body oil concepts providing silky hydration, radiant glow finishes, and precision pump or dropper dispensing.",
-    "image": "/images/bioglobal/products/body-oil.webp",
+    "image": PRODUCT_IMAGES['body-oil'],
     "keyActives": [
       "Fractionated Coconut Oil",
       "Jojoba Seed Oil",
@@ -1437,7 +1438,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Extended Glide & Aromatic Body Wellness",
     "shortDescription": "Discuss professional massage oil concepts blended with nourishing cold-pressed botanical lipids, slip texture, and calming scents.",
     "description": "Discuss professional massage oil concepts blended with nourishing cold-pressed botanical lipids, slip texture, and calming scents.",
-    "image": "/images/bioglobal/products/massage-oil.webp",
+    "image": PRODUCT_IMAGES['massage-oil'],
     "keyActives": [
       "Sweet Almond Oil",
       "Grapeseed Oil",
@@ -1483,7 +1484,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Gentle Hair & Scalp Cleansing Formulations",
     "shortDescription": "Explore mild baby shampoo concepts formulated with gentle non-irritating cleansing agents suited for delicate infant hair.",
     "description": "Explore mild baby shampoo concepts formulated with gentle non-irritating cleansing agents suited for delicate infant hair.",
-    "image": "/images/bioglobal/products/baby-shampoo.webp",
+    "image": PRODUCT_IMAGES['baby-shampoo'],
     "keyActives": [
       "Cocamidopropyl Betaine (Gentle Grade)",
       "Colloidal Oatmeal",
@@ -1529,7 +1530,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Mild Body Cleansing & Soft Lather",
     "shortDescription": "Discuss gentle baby body cleansing concepts featuring soothing plant extracts, soft foam, and child-friendly safety pumps.",
     "description": "Discuss gentle baby body cleansing concepts featuring soothing plant extracts, soft foam, and child-friendly safety pumps.",
-    "image": "/images/bioglobal/products/baby-body-wash.webp",
+    "image": PRODUCT_IMAGES['baby-body-wash'],
     "keyActives": [
       "Decyl Glucoside",
       "Chamomile Hydrosol",
@@ -1575,7 +1576,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Soft Emollient Moisture for Little Ones",
     "shortDescription": "Explore lightweight baby moisturizing lotion concepts crafted with nourishing colloidal oat and botanical emollients for tender skin.",
     "description": "Explore lightweight baby moisturizing lotion concepts crafted with nourishing colloidal oat and botanical emollients for tender skin.",
-    "image": "/images/bioglobal/products/baby-lotion.webp",
+    "image": PRODUCT_IMAGES['baby-lotion'],
     "keyActives": [
       "Sunflower Seed Oil",
       "Shea Butter",
@@ -1621,7 +1622,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Rich Comfort & Dry Patch Protection",
     "shortDescription": "Discover rich protective baby cream concepts designed for targeted dry spot moisturization in convenient tubes and jars.",
     "description": "Discover rich protective baby cream concepts designed for targeted dry spot moisturization in convenient tubes and jars.",
-    "image": "/images/bioglobal/products/baby-cream.webp",
+    "image": PRODUCT_IMAGES['baby-cream'],
     "keyActives": [
       "Colloidal Oatmeal",
       "Coconut Oil",
@@ -1667,7 +1668,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Gentle Bonding & Nourishing Oil Rituals",
     "shortDescription": "Explore pure gentle baby massage oil concepts blended with organic cold-pressed plant oils for nurturing daily bonding care.",
     "description": "Explore pure gentle baby massage oil concepts blended with organic cold-pressed plant oils for nurturing daily bonding care.",
-    "image": "/images/bioglobal/products/baby-massage-oil.webp",
+    "image": PRODUCT_IMAGES['baby-massage-oil'],
     "keyActives": [
       "Sweet Almond Oil",
       "Sesame Seed Oil",
@@ -1713,7 +1714,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Hydrating Care for Growing Infants",
     "shortDescription": "Discuss soothing baby daily moisturizer concepts formulated to support natural skin moisture balance in safe lockable dispensers.",
     "description": "Discuss soothing baby daily moisturizer concepts formulated to support natural skin moisture balance in safe lockable dispensers.",
-    "image": "/images/bioglobal/products/baby-moisturizer.webp",
+    "image": PRODUCT_IMAGES['baby-moisturizer'],
     "keyActives": [
       "Vegetable Glycerin",
       "Shea Butter",
@@ -1759,7 +1760,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Delicate Scalp & Fine Hair Conditioning",
     "shortDescription": "Explore mild nourishing baby hair and scalp oil concepts formulated with gentle natural seed oils and lightweight texture.",
     "description": "Explore mild nourishing baby hair and scalp oil concepts formulated with gentle natural seed oils and lightweight texture.",
-    "image": "/images/bioglobal/products/baby-hair-oil.webp",
+    "image": PRODUCT_IMAGES['baby-hair-oil'],
     "keyActives": [
       "Coconut Oil",
       "Sweet Almond Oil",
@@ -1805,7 +1806,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Protective Zinc Oxide Barrier Formulation",
     "shortDescription": "Develop soothing barrier diaper-area cream concepts formulated with zinc oxide and protective plant waxes for gentle skin comfort.",
     "description": "Develop soothing barrier diaper-area cream concepts formulated with zinc oxide and protective plant waxes for gentle skin comfort.",
-    "image": "/images/bioglobal/products/diaper-rash-cream.webp",
+    "image": PRODUCT_IMAGES['diaper-rash-cream'],
     "keyActives": [
       "Zinc Oxide (15%)",
       "Castor Seed Oil",
@@ -1851,7 +1852,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Advanced Radiance & Spot Correction Complex",
     "shortDescription": "Formulated with Alpha Arbutin, Kojic Dipalmitate, and Niacinamide to enhance skin radiance, reduce dark spots, and even out skin tone.",
     "description": "Formulated with Alpha Arbutin, Kojic Dipalmitate, and Niacinamide to enhance skin radiance, reduce dark spots, and even out skin tone for modern skincare brands.",
-    "image": "/images/bioglobal/products/moisturizing-cream.webp",
+    "image": PRODUCT_IMAGES['skin-brightening-cream'],
     "keyActives": [
       "Alpha Arbutin 2%",
       "Kojic Dipalmitate",
@@ -1899,7 +1900,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "6-Step Complete Salon-Grade Facial Protocol",
     "shortDescription": "A comprehensive turnkey 6-step professional facial kit including Cleanser, Exfoliating Scrub, Massage Gel, Massage Cream, Face Pack, and Post-Facial Serum.",
     "description": "A comprehensive turnkey 6-step professional facial kit designed for salons, spas, and consumer brands featuring active botanical extracts and derma nutrients.",
-    "image": "/images/bioglobal/categories/cosmetic-products.webp",
+    "image": PRODUCT_IMAGES['professional-facial-kit'],
     "keyActives": [
       "Glycolic Acid",
       "24K Colloidal Gold",
@@ -1947,7 +1948,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Cellular Regeneration & Overnight Barrier Repair",
     "shortDescription": "Intense nighttime restorative treatment formulated with Retinol alternative Bakuchiol, Ceramides, and Peptides to repair skin overnight.",
     "description": "Intense nighttime restorative treatment formulated with Retinol alternative Bakuchiol, Ceramides, and Peptides to repair skin barrier and promote cellular rejuvenation while sleeping.",
-    "image": "/images/bioglobal/products/eye-cream.webp",
+    "image": PRODUCT_IMAGES['restorative-night-cream'],
     "keyActives": [
       "Bakuchiol 1%",
       "Triple Ceramide Complex (NP, AP, EOP)",
@@ -1995,7 +1996,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Overnight Moisture Lock & Elasticity Infusion",
     "shortDescription": "Gel-cream sleeping pack that locks in moisture and infuses multi-molecular weight hyaluronic acid and copper peptides for bouncy skin.",
     "description": "Gel-cream sleeping pack that locks in moisture and infuses multi-molecular weight hyaluronic acid and copper peptides for bouncy, rejuvenated skin by morning.",
-    "image": "/images/bioglobal/products/face-mask.webp",
+    "image": PRODUCT_IMAGES['hydrating-peptide-sleeping-mask'],
     "keyActives": [
       "Copper Tripeptide-1",
       "5D Hyaluronic Acid",
@@ -2039,7 +2040,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Opulent Luxury Facial Protocol with 24K Gold Foil",
     "shortDescription": "Salon luxury facial kit infused with colloidal gold flakes, saffron extract, and hydrolyzed collagen for wedding and bridal radiance.",
     "description": "Salon luxury facial kit infused with colloidal gold flakes, saffron extract, and hydrolyzed collagen for bridal and event glow.",
-    "image": "/images/bioglobal/categories/cosmetic-products.webp",
+    "image": PRODUCT_IMAGES['24k-gold-radiance-facial-kit'],
     "keyActives": [
       "24K Gold Bhasma / Colloidal Gold",
       "Kashmiri Saffron Extract",
@@ -2081,7 +2082,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Clinical Skin Recovery & Cica Soothing Formulation",
     "shortDescription": "Formulated with Madecassoside, Allantoin, and Ectoin to relieve redness, soothe post-procedure irritation, and rebuild delicate facial skin.",
     "description": "Formulated with Madecassoside, Allantoin, and Ectoin to relieve redness, soothe post-procedure irritation, and rebuild delicate facial skin.",
-    "image": "/images/bioglobal/products/moisturizing-cream.webp",
+    "image": PRODUCT_IMAGES['derma-barrier-repair-cream'],
     "keyActives": [
       "Madecassoside 1%",
       "Ectoin 2%",
@@ -2126,7 +2127,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Natural Blemish Clearing & Pigmentation Control",
     "shortDescription": "Natural enzyme-rich papaya facial kit specially formulated to diminish tan, clear superficial blemishes, and revitalize dull complexions.",
     "description": "Natural enzyme-rich papaya facial kit specially formulated to diminish tan, clear superficial blemishes, and revitalize dull complexions.",
-    "image": "/images/bioglobal/categories/cosmetic-products.webp",
+    "image": PRODUCT_IMAGES['papaya-fruit-enzyme-facial-kit'],
     "keyActives": [
       "Papain Enzyme",
       "AHA Multi-Fruit Complex",
@@ -2168,7 +2169,7 @@ export const PRODUCTS: Product[] = [
     "tagline": "Dual Action Radiance & Collagen Boosting Emulsion",
     "shortDescription": "Concentrated brightening night cream with Palmitoyl Tetrapeptide-7 and Tranexamic Acid to reduce age spots and promote youthful elasticity.",
     "description": "Concentrated brightening night cream with Palmitoyl Tetrapeptide-7 and Tranexamic Acid to reduce age spots and promote youthful elasticity.",
-    "image": "/images/bioglobal/products/eye-cream.webp",
+    "image": PRODUCT_IMAGES['brightening-peptide-night-cream'],
     "keyActives": [
       "Tranexamic Acid 3%",
       "Palmitoyl Tetrapeptide-7",
